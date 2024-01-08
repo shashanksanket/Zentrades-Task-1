@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/%3Chttps://shashanksanket.github.io/Zentrades-Task-1%3E/static/css/main.cc9bd4f2.css",
-    "main.js": "/%3Chttps://shashanksanket.github.io/Zentrades-Task-1%3E/static/js/main.88ded59f.js",
-    "static/js/787.dc52cddb.chunk.js": "/%3Chttps://shashanksanket.github.io/Zentrades-Task-1%3E/static/js/787.dc52cddb.chunk.js",
-    "index.html": "/%3Chttps://shashanksanket.github.io/Zentrades-Task-1%3E/index.html",
-    "main.cc9bd4f2.css.map": "/%3Chttps://shashanksanket.github.io/Zentrades-Task-1%3E/static/css/main.cc9bd4f2.css.map",
-    "main.88ded59f.js.map": "/%3Chttps://shashanksanket.github.io/Zentrades-Task-1%3E/static/js/main.88ded59f.js.map",
-    "787.dc52cddb.chunk.js.map": "/%3Chttps://shashanksanket.github.io/Zentrades-Task-1%3E/static/js/787.dc52cddb.chunk.js.map"
+    "main.css": "/Zentrades-Task-1/static/css/main.cc9bd4f2.css",
+    "main.js": "/Zentrades-Task-1/static/js/main.cee08b2a.js",
+    "static/js/787.dc52cddb.chunk.js": "/Zentrades-Task-1/static/js/787.dc52cddb.chunk.js",
+    "index.html": "/Zentrades-Task-1/index.html",
+    "main.cc9bd4f2.css.map": "/Zentrades-Task-1/static/css/main.cc9bd4f2.css.map",
+    "main.cee08b2a.js.map": "/Zentrades-Task-1/static/js/main.cee08b2a.js.map",
+    "787.dc52cddb.chunk.js.map": "/Zentrades-Task-1/static/js/787.dc52cddb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc9bd4f2.css",
-    "static/js/main.88ded59f.js"
+    "static/js/main.cee08b2a.js"
   ]
 }
