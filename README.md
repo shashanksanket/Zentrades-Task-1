@@ -79,3 +79,8 @@ Visit http://localhost:3000 in your web browser to view the app.
 
 - Used Tailwind Css for styles
 
+##Images 
+<img width="1440" alt="Screenshot 2024-01-10 at 4 15 20 AM" src="https://github.com/shashanksanket/Zentrades-Task-1/assets/40575030/08670cec-9372
+-4e5a-a990-f04daf3ada1b">
+![Uploading Screenshot 2024-01-10 at 4.15.50 AM.png…]()
+
