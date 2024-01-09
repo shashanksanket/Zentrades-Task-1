@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+### The Problem Statement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create an application to parse the JSON from the API mentioned below. https://s3.amazonaws.com/open-to-cors/assignment.json
+The JSON file contains 1000 records of products. Each product has the following 4 attributes
+- Subcategory
+- Title
+- Price
+- Popularity
 
-## Available Scripts
+Task:
+- Fetch the JSON file programmatically and store the data in the data structure of your choice.
+- Display the data in the presentation of your choice with Title, Price ordered based on the descending popularity.
 
-In the project directory, you can run:
+Deliverables:
+- Hosting URL on Heroku / Github pages
+- Github repository link to your solution.
+- Time taken to complete this
 
-### `npm start`
+## Solution 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Product Display App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This React application fetches data from an external API, displaying a list of products categorized by subcategories. The products are ordered based on descending popularity and paginated for user convenience.
 
-### `npm test`
+##Live Link:
+https://shashanksanket.github.io/Zentrades-Task-1/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone <repository-url>
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navigate to the project directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```
+    cd <project-directory>
+    ```
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```
+    npm install
+    ```
+4. Run the application:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```
+    npm start
+    ```
+Visit http://localhost:3000 in your web browser to view the app.
 
-## Learn More
+## Features
+**Category Filtering:** Products are categorized, and you can filter products by clicking on a specific category.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Pagination:** Products are paginated to improve user experience, allowing you to navigate through the product list easily.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Sorting:** Products are initially sorted based on descending popularity.
 
-### Code Splitting
+## Implementation Details
+- Data is fetched from the API using the fetch function.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Categories are dynamically extracted from the product data.
 
-### Analyzing the Bundle Size
+- Products are sorted based on descending popularity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- The app displays a paginated list of products with details such as subcategory, title, price, and popularity.
 
-### Making a Progressive Web App
+## Directory Structure
+- src/App.js: Main component containing the application logic and rendering.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- src/App.css: Stylesheet for the application.
 
-### Advanced Configuration
+- Used Tailwind Css for styles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
