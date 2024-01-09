@@ -36,13 +36,13 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/shashanksanket/Zentrades-Task-1.git
    ```
 
 2. Navigate to the project directory:
 
     ```
-    cd <project-directory>
+    cd task1
     ```
 3. Install dependencies:
 
