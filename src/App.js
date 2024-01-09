@@ -8,7 +8,6 @@ function App() {
   const itemsPerPage = 20;
   const paginationRange = 5;
 
-
   useEffect(() => {
     fetch('https://s3.amazonaws.com/open-to-cors/assignment.json')
       .then((res) => res.json())
@@ -18,7 +17,6 @@ function App() {
         setProducts(sortedProducts);
       });
   }, []);
-
 
   const categories = [...new Set(products.map((product) => product.subcategory))];
 
@@ -35,7 +33,6 @@ function App() {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredProducts.slice(indexOfFirstItem, indexOfLastItem);
 
-
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const renderPageNumbers = () => {
@@ -47,7 +44,7 @@ function App() {
     return Array.from({ length: endPage - startPage + 1 }, (_, index) => (
       <button
         key={startPage + index}
-        className={`page-button ${currentPage === startPage + index ? 'active' : ''}`}
+        className={`page-button btn ${currentPage === startPage + index ? 'active' : ''}`}
         onClick={() => paginate(startPage + index)}
       >
         {startPage + index}
@@ -69,20 +66,20 @@ function App() {
         ))}
       </div>
       <div className="product-container">
-        <h1>Products</h1>
+        <h1 className="text-2xl mt-5 font-bold mb-4">Products</h1>
         {currentItems.map((product) => (
-          <div key={`${product.title}-${product.id}`} className="product-item">
+          <div key={`${product.title}-${product.id}`} className="product-item border rounded-md p-4 mb-4">
             <div className="product-details">
-              <div className="subcategory">{product.subcategory}</div>
+              <div className="subcategory font-bold">{product.subcategory}</div>
               <div className="title">{product.title}</div>
-              <div className="price">${product.price}</div>
-              <div className="popularity">Popularity: {product.popularity}</div>
+              <div className="price font-bold text-green-500">${product.price}</div>
+              <div className="popularity text-blue-500">Popularity: {product.popularity}</div>
             </div>
           </div>
         ))}
-        <div className="pagination">
+        <div className="pagination flex items-center justify-center mt-4">
           <button
-            className="page-button btn"
+            className={`page-button btn ${currentPage === 1 ? 'cursor-not-allowed' : ''}`}
             onClick={() => paginate(Math.max(1, currentPage - 1))}
             disabled={currentPage === 1}
           >
@@ -90,7 +87,7 @@ function App() {
           </button>
           {renderPageNumbers()}
           <button
-            className="page-button btn"
+            className={`page-button btn ${currentPage === Math.ceil(filteredProducts.length / itemsPerPage) ? 'cursor-not-allowed' : ''}`}
             onClick={() => paginate(Math.min(currentPage + 1, Math.ceil(filteredProducts.length / itemsPerPage)))}
             disabled={currentPage === Math.ceil(filteredProducts.length / itemsPerPage)}
           >
